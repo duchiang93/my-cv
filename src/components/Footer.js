@@ -1,27 +1,43 @@
 import React, { Fragment } from "react";
+import Icons from "./Icons";
 
 export const Footer = () => {
   return (
-    <div class="container">
+    <div className="container">
       <div>
-        <h1 class="title">Contact</h1>
-        <div class="footer-content">
-          <ul class="content_link">
+        <h1 className="title">Contact</h1>
+        <div className="footer-content">
+          <ul className="content_link">
             <li>
-              <h4>Sharon's Web</h4>
+              <h2>Sharon's Web</h2>
             </li>
             <li>
-              <a href="#"></a>
-              <a href="#"></a>
-              <a href="#"></a>
+              <a href="#">
+                <Icons.Facebook width={50} />
+              </a>
+              <a href="#">
+                <Icons.Github width={50} />
+              </a>
+              <a href="#">
+                <Icons.Instagram width={50} />
+              </a>
             </li>
           </ul>
         </div>
         <div>
-          <ul class="content_info">
-            <li>地址</li>
-            <li>電話</li>
-            <li>信箱</li>
+          <ul className="content_info">
+            <li>
+              <Icons.Location width={25} />
+              地址
+            </li>
+            <li>
+              <Icons.Phone width={25} />
+              電話
+            </li>
+            <li>
+              <Icons.Mail width={25} />
+              信箱
+            </li>
           </ul>
         </div>
       </div>

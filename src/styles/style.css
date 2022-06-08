@@ -12,4 +12,37 @@ a {
 ul {
   list-style-type: none;
 }
+
+div.container {
+  background-color: #cac6c6;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+div.container h1.title {
+  text-align: center;
+}
+
+div.container h1.title:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: 5px auto 40px;
+  background-color: #383838;
+}
+
+div.container .content_info {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
 /*# sourceMappingURL=style.css.map */
