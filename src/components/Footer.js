@@ -4,39 +4,40 @@ import Icons from "./Icons";
 export const Footer = () => {
   return (
     <div className="container">
-      <div>
-        <h1 className="title">Contact</h1>
-        <div className="footer-content">
+      <h1 className="title">Contact</h1>
+      <div className="grid-container">
+        <div className="grid-item">
           <ul className="content_link">
             <li>
-              <h2>Sharon's Web</h2>
+              <h4>Sharon's Web</h4>
             </li>
             <li>
               <a href="#">
-                <Icons.Facebook width={50} />
+                <Icons.Facebook width={40} />
               </a>
               <a href="#">
-                <Icons.Github width={50} />
+                <Icons.Github width={40} />
               </a>
               <a href="#">
-                <Icons.Instagram width={50} />
+                <Icons.Instagram width={40} />
               </a>
             </li>
           </ul>
         </div>
-        <div>
+
+        <div className="grid-item1">
           <ul className="content_info">
             <li>
-              <Icons.Location width={25} />
-              地址
+              <Icons.Location width={23} />
+              台中市太平區育德路99號
             </li>
             <li>
-              <Icons.Phone width={25} />
-              電話
+              <Icons.Phone width={23} />
+              0932-505424
             </li>
             <li>
-              <Icons.Mail width={25} />
-              信箱
+              <Icons.Mail width={23} />
+              duchiang93@gmail.com
             </li>
           </ul>
         </div>

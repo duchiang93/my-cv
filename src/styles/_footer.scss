@@ -1,13 +1,35 @@
 div.container {
   background-color: #cac6c6;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 0;
   width: 100%;
+  height: 15rem;
+  display: block;
+  bottom: 0;
+  position: absolute;
 
   h1.title {
     text-align: center;
+    padding-top: 1.5rem;
+  }
+
+  .grid-container {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .grid-item {
+    font-size: 30px;
+    text-align: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .grid-item1 {
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 
   h1.title:after {
@@ -18,8 +40,20 @@ div.container {
     margin: 5px auto 40px;
     background-color: #383838;
   }
-
+  .content_link {
+    li {
+      h4 {
+        font-weight: 300;
+        font-size: 1.5rem;
+      }
+      a {
+        padding: 0.5rem;
+      }
+    }
+  }
   .content_info {
     flex-direction: row;
+    font-size: 20px;
+    align-items: flex-start;
   }
 }

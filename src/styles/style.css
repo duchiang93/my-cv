@@ -15,19 +15,43 @@ ul {
 
 div.container {
   background-color: #cac6c6;
+  width: 100%;
+  height: 15rem;
+  display: block;
+  bottom: 0;
+  position: absolute;
+}
+
+div.container h1.title {
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+div.container .grid-container {
+  display: -ms-grid;
+  display: grid;
+  gap: 50px;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  position: relative;
 }
 
-div.container h1.title {
+div.container .grid-item {
+  font-size: 30px;
   text-align: center;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+div.container .grid-item1 {
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 
 div.container h1.title:after {
@@ -39,10 +63,23 @@ div.container h1.title:after {
   background-color: #383838;
 }
 
+div.container .content_link li h4 {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+div.container .content_link li a {
+  padding: 0.5rem;
+}
+
 div.container .content_info {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  font-size: 20px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 /*# sourceMappingURL=style.css.map */
