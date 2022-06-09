@@ -30,28 +30,82 @@ div.container h1.title {
 div.container .grid-container {
   display: -ms-grid;
   display: grid;
-  gap: 50px;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
+  -ms-grid-columns: 30% 30%;
+      grid-template-columns: 30% 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.container .grid-container .grid-itemLeft {
+  font-size: 30px;
+  text-align: center;
+      grid-template-areas: left;
+}
+
+div.container .grid-container .grid-itemRight {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
+      grid-template-areas: right;
 }
 
-div.container .grid-item {
-  font-size: 30px;
-  text-align: center;
-  padding-left: 10rem;
-  padding-right: 10rem;
+div.container .grid-container .grid-itemRight .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
 }
 
-div.container .grid-item1 {
-  padding-left: 10rem;
-  padding-right: 10rem;
+div.container .grid-container .grid-itemRight .col .svg {
+  width: 20px;
+}
+
+div.container .grid-container .grid-itemRight .col p {
+  padding-left: 15px;
+}
+
+div.container .grid-container .grid-itemRight .col:hover .svg {
+  -webkit-animation: jump 0.3s linear 1 forwards normal;
+          animation: jump 0.3s linear 1 forwards normal;
+  display: inline-block;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+@-webkit-keyframes jump {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, -0.5em, 0);
+            transform: translate3d(0, -0.5em, 0);
+  }
+}
+
+@keyframes jump {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, -0.5em, 0);
+            transform: translate3d(0, -0.5em, 0);
+  }
 }
 
 div.container h1.title:after {

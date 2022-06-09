@@ -6,7 +6,7 @@ export const Footer = () => {
     <div className="container">
       <h1 className="title">Contact</h1>
       <div className="grid-container">
-        <div className="grid-item">
+        <div className="grid-itemLeft">
           <ul className="content_link">
             <li>
               <h4>Sharon's Web</h4>
@@ -25,19 +25,19 @@ export const Footer = () => {
           </ul>
         </div>
 
-        <div className="grid-item1">
+        <div className="grid-itemRight">
           <ul className="content_info">
-            <li>
-              <Icons.Location width={23} />
-              台中市太平區育德路99號
+            <li className="col">
+              <Icons.Location className="svg" />
+              <p>台中市太平區育德路99號</p>
             </li>
-            <li>
-              <Icons.Phone width={23} />
-              0932-505424
+            <li className="col">
+              <Icons.Phone className="svg" />
+              <p>0932-505424</p>
             </li>
-            <li>
-              <Icons.Mail width={23} />
-              duchiang93@gmail.com
+            <li className="col">
+              <Icons.Mail className="svg" />
+              <p>duchiang93@gmail.com</p>
             </li>
           </ul>
         </div>
