@@ -1,0 +1,19 @@
+nav {
+  min-height: 100vh;
+
+  .navigation {
+    background-color: #f5f5f5;
+  }
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3rem;
+    li {
+      padding: 0.5rem 1rem;
+      span.text {
+        padding-left: 0.5rem;
+      }
+    }
+  }
+}

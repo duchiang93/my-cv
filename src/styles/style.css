@@ -13,8 +13,8 @@ ul {
   list-style-type: none;
 }
 
-div.container {
-  background-color: #cac6c6;
+.container {
+  background-color: #fdf2f0;
   width: 100%;
   height: 15rem;
   display: block;
@@ -22,12 +22,12 @@ div.container {
   position: absolute;
 }
 
-div.container h1.title {
+.container h1.title {
   text-align: center;
   padding-top: 1.5rem;
 }
 
-div.container .grid-container {
+.container .grid-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 30% 30%;
@@ -37,13 +37,13 @@ div.container .grid-container {
           justify-content: center;
 }
 
-div.container .grid-container .grid-itemLeft {
+.container .grid-container .grid-itemLeft {
   font-size: 30px;
   text-align: center;
       grid-template-areas: left;
 }
 
-div.container .grid-container .grid-itemRight {
+.container .grid-container .grid-itemRight {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto;
@@ -57,7 +57,7 @@ div.container .grid-container .grid-itemRight {
       grid-template-areas: right;
 }
 
-div.container .grid-container .grid-itemRight .col {
+.container .grid-container .grid-itemRight .col {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,15 +70,15 @@ div.container .grid-container .grid-itemRight .col {
   height: 40px;
 }
 
-div.container .grid-container .grid-itemRight .col .svg {
+.container .grid-container .grid-itemRight .col .svg {
   width: 20px;
 }
 
-div.container .grid-container .grid-itemRight .col p {
+.container .grid-container .grid-itemRight .col p {
   padding-left: 15px;
 }
 
-div.container .grid-container .grid-itemRight .col:hover .svg {
+.container .grid-container .grid-itemRight .col:hover .svg {
   -webkit-animation: jump 0.3s linear 1 forwards normal;
           animation: jump 0.3s linear 1 forwards normal;
   display: inline-block;
@@ -108,7 +108,7 @@ div.container .grid-container .grid-itemRight .col:hover .svg {
   }
 }
 
-div.container h1.title:after {
+.container h1.title:after {
   content: "";
   display: block;
   width: 50px;
@@ -117,16 +117,16 @@ div.container h1.title:after {
   background-color: #383838;
 }
 
-div.container .content_link li h4 {
+.container .content_link li h4 {
   font-weight: 300;
   font-size: 1.5rem;
 }
 
-div.container .content_link li a {
+.container .content_link li a {
   padding: 0.5rem;
 }
 
-div.container .content_info {
+.container .content_info {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -135,5 +135,31 @@ div.container .content_info {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+nav {
+  min-height: 100vh;
+}
+
+nav .navigation {
+  background-color: #f5f5f5;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 3rem;
+}
+
+nav ul li {
+  padding: 0.5rem 1rem;
+}
+
+nav ul li span.text {
+  padding-left: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */
