@@ -3,6 +3,8 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif, "Oswald";
+  font-family: "Roboto Mono", monospace;
 }
 
 a {
@@ -76,6 +78,7 @@ ul {
 
 .container .grid-container .grid-itemRight .col p {
   padding-left: 15px;
+  font-family: "Microsoft YaHei", sans-serif;
 }
 
 .container .grid-container .grid-itemRight .col:hover .svg {
@@ -140,9 +143,21 @@ ul {
 .nav_container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  -ms-grid-columns: 40% 50%;
+      grid-template-columns: 40% 50%;
   margin: 1rem;
+}
+
+.nav_container .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav_container .nav_grid {
@@ -163,22 +178,37 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.nav_container .nav_grid .list a .text {
-  display: -ms-grid;
-  display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.nav_container .nav_grid .list:hover .icon {
+.nav_container .nav_grid .list a .text {
+  display: -ms-grid;
+  display: grid;
+  color: #bb5a3a;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 100px;
+  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav_container .nav_grid .list :hover .text {
+  background-color: #bb5a3a;
+  color: #fdf2f0;
+  border-radius: 50px;
+}
+
+.nav_container .nav_grid .list :hover .icon {
   -webkit-animation: jump 0.3s linear 1 forwards normal;
           animation: jump 0.3s linear 1 forwards normal;
   display: inline-block;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
 }
 
 @keyframes jump {
@@ -193,7 +223,7 @@ ul {
 }
 
 .icon {
-  width: 70px;
+  width: 100px;
 }
 
 .icon rect {

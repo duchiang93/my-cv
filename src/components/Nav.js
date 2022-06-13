@@ -8,7 +8,7 @@ const Nav = () => {
         <h1>LOGO</h1>
       </div>
       <ul className="nav_grid">
-        <li class="list">
+        <li className="list">
           <a href="#">
             <span>
               <Icons.AboutMe className="icon" />
@@ -16,7 +16,7 @@ const Nav = () => {
             <span className="text">About Me</span>
           </a>
         </li>
-        <li class="list">
+        <li className="list">
           <a href="#">
             <span>
               <Icons.Skill className="icon" />
@@ -24,7 +24,7 @@ const Nav = () => {
             <span className="text">Skill</span>
           </a>
         </li>
-        <li class="list">
+        <li className="list">
           <a href="#">
             <span>
               <Icons.Project className="icon" />
@@ -32,7 +32,7 @@ const Nav = () => {
             <span className="text">Project</span>
           </a>
         </li>
-        <li class="list">
+        <li className="list">
           <a href="#">
             <span>
               <Icons.Contact className="icon" />
