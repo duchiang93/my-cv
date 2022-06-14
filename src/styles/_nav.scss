@@ -29,7 +29,8 @@
           justify-content: center;
         }
       }
-      :hover {
+      :hover,
+      :active {
         .text {
           background-color: #bb5a3a;
           color: #fdf2f0;

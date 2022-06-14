@@ -21,7 +21,6 @@ ul {
   height: 15rem;
   display: block;
   bottom: 0;
-  position: absolute;
 }
 
 .container h1.title {
@@ -199,13 +198,15 @@ ul {
           justify-content: center;
 }
 
-.nav_container .nav_grid .list :hover .text {
+.nav_container .nav_grid .list :hover .text,
+.nav_container .nav_grid .list :active .text {
   background-color: #bb5a3a;
   color: #fdf2f0;
   border-radius: 50px;
 }
 
-.nav_container .nav_grid .list :hover .icon {
+.nav_container .nav_grid .list :hover .icon,
+.nav_container .nav_grid .list :active .icon {
   -webkit-animation: jump 0.3s linear 1 forwards normal;
           animation: jump 0.3s linear 1 forwards normal;
   display: inline-block;
@@ -231,19 +232,40 @@ ul {
   height: 48px;
 }
 
-.colourUnder {
-  background-color: #feeadf;
+.greet_container {
   width: 100%;
-  min-height: 50rem;
-  position: relative;
+  height: 50rem;
+  background-color: #feeadf;
 }
 
-.colourUnder .text {
+.greet_container .greet_top {
   position: absolute;
+  left: 25rem;
+  top: 23rem;
   z-index: 10;
 }
 
-.colourUnder img {
-  height: 25rem;
+.greet_container .greet_top p {
+  font-size: 60px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: right;
+}
+
+.greet_container .greet_top h3 {
+  font-size: 25px;
+  font-weight: 100;
+  text-align: right;
+}
+
+.greet_container .greet_bottom {
+  position: absolute;
+  left: 30%;
+  top: 13rem;
+  z-index: 1;
+}
+
+.greet_container .greet_bottom img {
+  width: 800px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,13 +1,33 @@
-.colourUnder {
-  background-color: #feeadf;
+.greet_container {
   width: 100%;
-  min-height: 50rem;
-  position: relative;
-  .text {
+  height: 50rem;
+  background-color: #feeadf;
+  .greet_top {
     position: absolute;
+    left: 25rem;
+    top: 23rem;
     z-index: 10;
+
+    p {
+      font-size: 60px;
+      font-weight: 400;
+      font-style: italic;
+      text-align: right;
+    }
+    h3 {
+      font-size: 25px;
+      font-weight: 100;
+      text-align: right;
+    }
   }
-  img {
-    height: 25rem;
+  .greet_bottom {
+    position: absolute;
+    left: 30%;
+    top: 13rem;
+    z-index: 1;
+
+    img {
+      width: 800px;
+    }
   }
 }
