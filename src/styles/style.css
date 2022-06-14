@@ -230,4 +230,20 @@ ul {
   width: 48px;
   height: 48px;
 }
+
+.colourUnder {
+  background-color: #feeadf;
+  width: 100%;
+  min-height: 50rem;
+  position: relative;
+}
+
+.colourUnder .text {
+  position: absolute;
+  z-index: 10;
+}
+
+.colourUnder img {
+  height: 25rem;
+}
 /*# sourceMappingURL=style.css.map */

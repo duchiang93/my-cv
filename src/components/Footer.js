@@ -1,7 +1,7 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Icons from "./Icons";
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <div className="container">
       <h1 className="title">Contact</h1>

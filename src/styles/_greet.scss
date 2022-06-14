@@ -1,0 +1,13 @@
+.colourUnder {
+  background-color: #feeadf;
+  width: 100%;
+  min-height: 50rem;
+  position: relative;
+  .text {
+    position: absolute;
+    z-index: 10;
+  }
+  img {
+    height: 25rem;
+  }
+}
