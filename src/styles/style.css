@@ -268,4 +268,60 @@ ul {
 .greet_container .greet_bottom img {
   width: 800px;
 }
+
+.homepage_container {
+  width: 100%;
+  height: 40rem;
+  padding-top: 3rem;
+}
+
+.homepage_container .title {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.homepage_container .about_text {
+  position: absolute;
+  width: 35rem;
+  height: 30rem;
+  left: 60rem;
+  padding-top: 5rem;
+}
+
+.homepage_container .about_text h3 {
+  padding-bottom: 1rem;
+  font-size: 25px;
+}
+
+.homepage_container .about_pic {
+  position: absolute;
+  left: 35rem;
+}
+
+.homepage_container .about_pic .color {
+  background-color: #bb5a3a;
+  width: 20rem;
+  height: 25rem;
+  -webkit-box-shadow: 5px 3px 7px #bdbebd;
+          box-shadow: 5px 3px 7px #bdbebd;
+  z-index: -1;
+}
+
+.homepage_container .about_pic img {
+  position: absolute;
+  top: -1rem;
+  left: -3rem;
+  width: 19rem;
+  height: 23rem;
+  z-index: 10;
+}
+
+h1.title:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: 5px auto 40px;
+  background-color: #383838;
+}
 /*# sourceMappingURL=style.css.map */
