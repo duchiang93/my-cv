@@ -1,8 +1,10 @@
 import React from "react";
 import Nav from "./components/Nav";
-import Footer from "./components/Footer";
 import About from "./pages/About";
-import Greet from "./components/Greet";
+import Greet from "./pages/Greet";
+import Skills from "./pages/Skills";
+import Project from "./pages/Project";
+import Contact from "./components/Contact";
 import "./styles/style.css";
 
 function App() {
@@ -11,7 +13,9 @@ function App() {
       <Nav />
       <Greet />
       <About />
-      <Footer />
+      <Skills />
+      <Project />
+      <Contact />
     </div>
   );
 }

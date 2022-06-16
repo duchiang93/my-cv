@@ -1,7 +1,7 @@
 import React from "react";
 import Icons from "./Icons";
 
-const Footer = () => {
+const Contact = () => {
   return (
     <div className="container">
       <h1 className="title">Contact</h1>
@@ -29,11 +29,11 @@ const Footer = () => {
           <ul className="content_info">
             <li className="col">
               <Icons.Location className="svg" />
-              <p>台中市太平區育德路99號</p>
+              <p>Taichung City,Taiwan</p>
             </li>
             <li className="col">
               <Icons.Phone className="svg" />
-              <p>0932-505424</p>
+              <p>0912-345678</p>
             </li>
             <li className="col">
               <Icons.Mail className="svg" />
@@ -42,8 +42,9 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+      <section className="form"></section>
     </div>
   );
 };
 
-export default Footer;
+export default Contact;

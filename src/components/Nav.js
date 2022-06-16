@@ -21,7 +21,7 @@ const Nav = () => {
             <span>
               <Icons.Skill className="icon" />
             </span>
-            <span className="text">Skill</span>
+            <span className="text">Skills</span>
           </a>
         </li>
         <li className="list">
