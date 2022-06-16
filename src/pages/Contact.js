@@ -1,5 +1,6 @@
 import React from "react";
-import Icons from "./Icons";
+import Icons from "../components/Icons";
+import Contactform from "../components/Contactform";
 
 const Contact = () => {
   return (
@@ -7,25 +8,6 @@ const Contact = () => {
       <h1 className="title">Contact</h1>
       <div className="grid-container">
         <div className="grid-itemLeft">
-          <ul className="content_link">
-            <li>
-              <h4>Sharon's Web</h4>
-            </li>
-            <li>
-              <a href="#">
-                <Icons.Facebook width={40} />
-              </a>
-              <a href="#">
-                <Icons.Github width={40} />
-              </a>
-              <a href="#">
-                <Icons.Instagram width={40} />
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div className="grid-itemRight">
           <ul className="content_info">
             <li className="col">
               <Icons.Location className="svg" />
@@ -40,9 +22,25 @@ const Contact = () => {
               <p>duchiang93@gmail.com</p>
             </li>
           </ul>
+          <ul className="content_link">
+            <li>
+              <a href="#">
+                <Icons.Facebook />
+              </a>
+              <a href="#">
+                <Icons.Github />
+              </a>
+              <a href="#">
+                <Icons.Instagram />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div className="grid-itemRight">
+          <Contactform />
         </div>
       </div>
-      <section className="form"></section>
     </div>
   );
 };

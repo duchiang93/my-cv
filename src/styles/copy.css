@@ -1,0 +1,124 @@
+.container {
+  background-color: #fdf2f0;
+  width: 100%;
+  height: 50rem;
+  display: block;
+  bottom: 0;
+}
+
+.container h1.title {
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.container .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 30%;
+      grid-template-columns: 30% 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .grid-container .grid-itemLeft {
+  font-size: 30px;
+  text-align: center;
+      grid-template-areas: left;
+}
+
+.container .grid-container .grid-itemRight {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      grid-template-areas: right;
+}
+
+.container .grid-container .grid-itemRight .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+}
+
+.container .grid-container .grid-itemRight .col .svg {
+  width: 20px;
+}
+
+.container .grid-container .grid-itemRight .col p {
+  padding-left: 15px;
+  font-family: "Microsoft YaHei", sans-serif;
+}
+
+.container .grid-container .grid-itemRight .col:hover .svg {
+  -webkit-animation: jump 0.3s linear 1 forwards normal;
+          animation: jump 0.3s linear 1 forwards normal;
+  display: inline-block;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+@-webkit-keyframes jump {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, -0.5em, 0);
+            transform: translate3d(0, -0.5em, 0);
+  }
+}
+
+@keyframes jump {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, -0.5em, 0);
+            transform: translate3d(0, -0.5em, 0);
+  }
+}
+
+.container h1.title:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: 5px auto 40px;
+  background-color: #383838;
+}
+
+.container .content_link li h4 {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.container .content_link li a {
+  padding: 0.5rem;
+}
+
+.container .content_info {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 20px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+/*# sourceMappingURL=copy.css.map */

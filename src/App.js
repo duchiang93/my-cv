@@ -4,7 +4,8 @@ import About from "./pages/About";
 import Greet from "./pages/Greet";
 import Skills from "./pages/Skills";
 import Project from "./pages/Project";
-import Contact from "./components/Contact";
+import Contact from "./pages/Contact";
+
 import "./styles/style.css";
 
 function App() {
