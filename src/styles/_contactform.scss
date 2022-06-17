@@ -1,10 +1,42 @@
 .form_container {
-  .form_button {
-    background-color: #bb5a3a;
-    border: 0;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    font-size: 1.5rem;
+  .contactform {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    .col {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .text_group {
+        display: flex;
+        flex-direction: column;
+        padding: 0rem 1.5rem 1.5rem 1.5rem;
+      }
+      label {
+        padding-bottom: 0.5rem;
+      }
+      input {
+        padding: 0.3rem;
+      }
+    }
+    textarea {
+      resize: none;
+    }
+
+    .form_button {
+      font-size: 2rem;
+      background-color: #bb5a3a;
+      border: 3;
+      height: 125px;
+      width: 125px;
+      border-radius: 50%;
+      margin-top: 3.5rem;
+      color: #fdf2f0;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #fdf2f0;
+      color: #bb5a3a;
+    }
   }
 }

@@ -4,18 +4,39 @@ const Contactform = () => {
   return (
     <div className="form_container">
       <form className="contactform">
-        <label htmlFor="FirstName">First Name*</label>
-        <input type="text" id="firstName" value="" />
-        <label htmlFor="LastName">Last Name*</label>
-        <input type="text" id="lastName" value="" />
-        <br />
-        <label htmlFor="mail">Email*</label>
-        <input type="text" id="email" value="" />
-        <br />
-        <label htmlFor="message">Message</label>
-        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-        <br />
-        <button className="form_button">Submit</button>
+        <div className="col">
+          <div className="text_group">
+            <label htmlFor="firstName">First Name*</label>
+            <input type="text" id="firstName" required />
+          </div>
+          <div className="text_group">
+            <label htmlFor="lastName">Last Name*</label>
+            <input type="text" id="lastName" required />
+          </div>
+        </div>
+        <div className="col">
+          <div className="text_group">
+            <label htmlFor="phone">Phone</label>
+            <input type="text" id="phone" />
+          </div>
+          <div className="text_group">
+            <label htmlFor="mail">Email</label>
+            <input type="text" id="email" />
+          </div>
+        </div>
+        <div className="col">
+          <div className="text_group">
+            <label htmlFor="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="33"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <button className="form_button">Submit</button>
+        </div>
       </form>
     </div>
   );
