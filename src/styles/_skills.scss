@@ -6,6 +6,78 @@
     text-align: center;
     padding-top: 2rem;
   }
+  .skillsbar_container {
+    display: grid;
+    height: 80%;
+    place-items: center;
+  }
+  .skills_bar {
+    width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .skills_bar .bar {
+    margin: 20px 0;
+  }
+  .skills_bar .bar:first-child {
+    margin-top: 0;
+  }
+  .skills_bar .bar .info {
+    margin-bottom: 5px;
+  }
+  .skills_bar .bar .info span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .skills_bar .bar .progress_line {
+    position: relative;
+    height: 25px;
+    width: 100%;
+    background-color: #f0f0f0;
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  .bar .progress_line span {
+    height: 100%;
+    width: 80%;
+    background-color: #bb5a3a;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  @keyframes animate {
+    100% {
+      transform: scale(1);
+    }
+  }
+  .progress_line.html span {
+    width: 80%;
+  }
+  .progress_line.scss span {
+    width: 70%;
+  }
+  .progress_line.javascript span {
+    width: 30%;
+  }
+  .progress_line.react span {
+    width: 40%;
+  }
+  .progress_line.git span {
+    width: 50%;
+  }
+  .progress_line.mongo span {
+    width: 30%;
+  }
+  .progress_line.node span {
+    width: 50%;
+  }
 }
 
 h1.title:after {

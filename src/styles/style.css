@@ -225,6 +225,111 @@ h1.title:after {
   padding-top: 2rem;
 }
 
+.skills_container .skillsbar_container {
+  display: -ms-grid;
+  display: grid;
+  height: 80%;
+  place-items: center;
+}
+
+.skills_container .skills_bar {
+  width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px 30px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skills_container .skills_bar .bar {
+  margin: 20px 0;
+}
+
+.skills_container .skills_bar .bar:first-child {
+  margin-top: 0;
+}
+
+.skills_container .skills_bar .bar .info {
+  margin-bottom: 5px;
+}
+
+.skills_container .skills_bar .bar .info span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.skills_container .skills_bar .bar .progress_line {
+  position: relative;
+  height: 25px;
+  width: 100%;
+  background-color: #f0f0f0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  -webkit-animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+          animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.skills_container .bar .progress_line span {
+  height: 100%;
+  width: 80%;
+  background-color: #bb5a3a;
+  position: absolute;
+  border-radius: 10px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+          animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@-webkit-keyframes animate {
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes animate {
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.skills_container .progress_line.html span {
+  width: 80%;
+}
+
+.skills_container .progress_line.scss span {
+  width: 70%;
+}
+
+.skills_container .progress_line.javascript span {
+  width: 30%;
+}
+
+.skills_container .progress_line.react span {
+  width: 40%;
+}
+
+.skills_container .progress_line.git span {
+  width: 50%;
+}
+
+.skills_container .progress_line.mongo span {
+  width: 30%;
+}
+
+.skills_container .progress_line.node span {
+  width: 50%;
+}
+
 h1.title:after {
   content: "";
   display: block;
