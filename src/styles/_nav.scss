@@ -60,3 +60,12 @@
     height: 48px;
   }
 }
+
+@include pad {
+  .nav_container {
+    display: flex;
+    .nav_grid {
+      display: none;
+    }
+  }
+}

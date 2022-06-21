@@ -33,7 +33,6 @@
       top: -2.5rem;
       left: -2.5rem;
       width: 19rem;
-      height: 25rem;
       z-index: 10;
     }
   }
@@ -46,4 +45,40 @@ h1.title:after {
   height: 3px;
   margin: 5px auto 40px;
   background-color: #383838;
+}
+
+@include pad {
+  .homepage_container {
+    height: 55rem;
+    .about_text {
+      left: 50%;
+      top: 85rem;
+      transform: translate(-50%, 0%);
+      width: 80%;
+    }
+    .about_pic {
+      top: 65rem;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      .color {
+        width: 15rem;
+        height: 20rem;
+      }
+      img {
+        width: 15rem;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .homepage_container {
+    height: 55rem;
+    .about_text {
+      top: 70rem;
+    }
+    .about_pic {
+      top: 50rem;
+    }
+  }
 }

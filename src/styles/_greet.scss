@@ -19,9 +19,9 @@
       font-weight: 100;
       text-align: right;
       text-shadow: 3px 3px 3px #f2b28a;
-      // #ce9251
     }
   }
+
   .greet_bottom {
     position: absolute;
     left: 30%;
@@ -31,5 +31,37 @@
     img {
       width: 800px;
     }
+  }
+}
+
+@include pad {
+  .greet_container {
+    height: 50rem;
+    .greet_top {
+      position: static;
+      padding-top: 20px;
+      padding-bottom: 30px;
+      P {
+        font-size: 25px;
+        text-align: center;
+      }
+      h3 {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+
+    .greet_bottom {
+      position: static;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .greet_container {
+    height: 35rem;
   }
 }

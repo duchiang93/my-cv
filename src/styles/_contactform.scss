@@ -26,7 +26,7 @@
     .form_button {
       font-size: 2rem;
       background-color: #bb5a3a;
-      border: 3;
+      border: 0;
       height: 125px;
       width: 125px;
       border-radius: 50%;
@@ -35,8 +35,50 @@
       cursor: pointer;
     }
     button:hover {
-      background-color: #fdf2f0;
-      color: #bb5a3a;
+      background-color: #bb5a3abb;
+    }
+  }
+}
+
+@include pad {
+  .form_container {
+    padding-bottom: 1rem;
+    .contactform {
+      .col {
+        .text_group {
+          padding: 0 0.5rem 0.5rem 0.5rem;
+        }
+      }
+      .form_button {
+        height: 100px;
+        width: 100px;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .form_container {
+    padding-bottom: 1rem;
+    .contactform {
+      .col {
+        input {
+          width: 9rem;
+          height: 1.5rem;
+        }
+        .text_group {
+          padding: 0 0.5rem 0.5rem 0.5rem;
+        }
+      }
+      .form_button {
+        height: 90px;
+        width: 90px;
+        font-size: 1.5rem;
+      }
+      textarea {
+        width: 13rem;
+      }
     }
   }
 }

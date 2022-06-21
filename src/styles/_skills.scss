@@ -88,3 +88,16 @@ h1.title:after {
   margin: 5px auto 40px;
   background-color: #383838;
 }
+
+@include pad {
+  .skills_container {
+    height: 45rem;
+    .skillsbar_container {
+      height: 60%;
+    }
+
+    .skills_bar {
+      width: 300px;
+    }
+  }
+}
