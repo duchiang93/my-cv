@@ -1,8 +1,30 @@
 .project_container {
   width: 100%;
   height: 50rem;
+
   .title {
     text-align: center;
     padding-top: 2rem;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .project_grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 350px;
+    }
+    .work_card {
+      padding: 3rem;
+    }
+    h4 {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+  }
+  .work_list_img img {
+    width: 20rem;
   }
 }
