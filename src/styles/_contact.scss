@@ -51,6 +51,19 @@
       }
       .content_link svg {
         width: 50px;
+        :hover {
+          animation: jump 0.3s linear 1 forwards normal;
+          display: inline-block;
+          transform: translate3d(0, 0, 0);
+          @keyframes jump {
+            0% {
+              transform: translate3d(0, 0, 0);
+            }
+            100% {
+              transform: translate3d(0, -0.5em, 0);
+            }
+          }
+        }
       }
     }
 
