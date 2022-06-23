@@ -529,6 +529,15 @@ h1.title:after {
   padding-bottom: 1rem;
 }
 
+.container h1.title:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: 5px auto 40px;
+  background-color: #383838;
+}
+
 .container .grid-container {
   display: -ms-grid;
   display: grid;
@@ -598,11 +607,26 @@ h1.title:after {
   }
 }
 
-.container .grid-container .grid-itemLeft .content_link svg {
-  width: 50px;
+.container .grid-container .grid-itemRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.container .grid-container .grid-itemLeft .content_link svg :hover {
+.container .content_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .content_link li {
+  padding: 0.5rem;
+}
+
+.container .content_link li :hover svg {
   -webkit-animation: jump 0.3s linear 1 forwards normal;
           animation: jump 0.3s linear 1 forwards normal;
   display: inline-block;
@@ -621,26 +645,8 @@ h1.title:after {
   }
 }
 
-.container .grid-container .grid-itemRight {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.container h1.title:after {
-  content: "";
-  display: block;
+.container .content_link li a svg {
   width: 50px;
-  height: 3px;
-  margin: 5px auto 40px;
-  background-color: #383838;
-}
-
-.container .content_link li a {
-  padding: 0.5rem;
 }
 
 .container .content_info {

@@ -27,9 +27,13 @@ const Contact = () => {
               <a href="#">
                 <Icons.Facebook />
               </a>
+            </li>
+            <li>
               <a href="#">
                 <Icons.Github />
               </a>
+            </li>
+            <li>
               <a href="#">
                 <Icons.Instagram />
               </a>
