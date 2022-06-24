@@ -18,12 +18,15 @@ const Project = () => {
             <h4>Photo Website</h4>
           </li>
           <li className="work_card ">
-            <a href="https://witega.com.tw/" target="_blank">
+            <a
+              href=" https://duchiang93.github.io/To-Do-List//"
+              target="_blank"
+            >
               <div className="work_list_img">
-                <img src="/IMG/witega.jpg" alt="" />
+                <img src="/IMG/todo list.jpg" alt="" />
               </div>
             </a>
-            <h4>Witega 威特嘉科技開發股份有限公司</h4>
+            <h4>Sharon's Todolist</h4>
           </li>
           <li className="work_card">
             <a href="https://witega.com.tw/" target="_blank">
