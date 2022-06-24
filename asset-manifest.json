@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/my-cv/static/css/main.87b40eb1.css",
+    "main.js": "/my-cv/static/js/main.fbfe2939.js",
+    "static/media/github S.svg": "/my-cv/static/media/github S.bf838ffa20711fda9fe183a14758fa9a.svg",
+    "static/media/instagram S.svg": "/my-cv/static/media/instagram S.24bf59ea73574d3c75deccdca5e853e4.svg",
+    "static/media/about me.svg": "/my-cv/static/media/about me.ed086750cf08df5b6e999171d385d239.svg",
+    "static/media/skill.svg": "/my-cv/static/media/skill.a18edb07fa1460ceebe02b2f91ed5db3.svg",
+    "static/media/contact.svg": "/my-cv/static/media/contact.e22ad706c4b2837155cd47a96f03cc5c.svg",
+    "static/media/project.svg": "/my-cv/static/media/project.1134c92a884c6b262e8885303ce4ee82.svg",
+    "index.html": "/my-cv/index.html",
+    "static/media/phone-solid.svg": "/my-cv/static/media/phone-solid.b70d9a41d0b24163a99e9c7d3cd1b57b.svg",
+    "static/media/facebook S.svg": "/my-cv/static/media/facebook S.d58b61658acaa1d230e92f7e54929bc5.svg",
+    "static/media/location-dot-solid.svg": "/my-cv/static/media/location-dot-solid.0efc44250a4fc686d1138e81b635ecba.svg",
+    "static/media/envelope-solid.svg": "/my-cv/static/media/envelope-solid.67f43240bab7de472e72057f991081ec.svg",
+    "main.87b40eb1.css.map": "/my-cv/static/css/main.87b40eb1.css.map",
+    "main.fbfe2939.js.map": "/my-cv/static/js/main.fbfe2939.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87b40eb1.css",
+    "static/js/main.fbfe2939.js"
+  ]
+}
