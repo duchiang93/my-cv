@@ -9,7 +9,7 @@ const Greet = () => {
         <h3>Front-end Engineer</h3>
       </div>
       <div className="greet_bottom">
-        <img src="../public/IMG/My pic.jpg" alt="" />
+        <img src="./my-cv/IMG/My pic.jpg" alt="" />
       </div>
     </div>
   );
