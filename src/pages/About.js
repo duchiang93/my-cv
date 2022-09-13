@@ -17,7 +17,7 @@ export const About = () => {
       </div>
       <div className="about_pic">
         <div className="color"></div>
-        <img src="./IMG/About me.jpg" alt="" />
+        <img src={process.env.PUBLIC_URL + "/IMG/About me.jpg"} alt="" />
       </div>
     </div>
   );

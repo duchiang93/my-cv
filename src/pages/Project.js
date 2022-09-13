@@ -12,7 +12,10 @@ const Project = () => {
               target="_blank"
             >
               <div className="work_list_img">
-                <img src="./IMG/photo-website.jpg" alt="" />
+                <img
+                  src={process.env.PUBLIC_URL + "/IMG/photo-website.jpg"}
+                  alt=""
+                />
               </div>
             </a>
             <h4>Photo Website</h4>
@@ -23,7 +26,10 @@ const Project = () => {
               target="_blank"
             >
               <div className="work_list_img">
-                <img src="./IMG/todo list.jpg" alt="" />
+                <img
+                  src={process.env.PUBLIC_URL + "/IMG/todo list.jpg"}
+                  alt=""
+                />
               </div>
             </a>
             <h4>Sharon's Todolist</h4>
@@ -31,7 +37,7 @@ const Project = () => {
           <li className="work_card">
             <a href="https://witega.com.tw/" target="_blank">
               <div className="work_list_img">
-                <img src="./IMG/witega.jpg" alt="" />
+                <img src={process.env.PUBLIC_URL + "/IMG/witega.jpg"} alt="" />
               </div>
             </a>
             <h4>Witega 威特嘉科技開發股份有限公司</h4>
@@ -39,7 +45,7 @@ const Project = () => {
           <li className="work_card ">
             <a href="https://witega.com.tw/" target="_blank">
               <div className="work_list_img">
-                <img src="./IMG/witega.jpg" alt="" />
+                <img src={process.env.PUBLIC_URL + "/IMG/witega.jpg"} alt="" />
               </div>
             </a>
             <h4>Witega 威特嘉科技開發股份有限公司</h4>
@@ -47,7 +53,7 @@ const Project = () => {
           <li className="work_card">
             <a href="https://witega.com.tw/" target="_blank">
               <div className="work_list_img">
-                <img src="./IMG/witega.jpg" alt="" />
+                <img src={process.env.PUBLIC_URL + "/IMG/witega.jpg"} alt="" />
               </div>
             </a>
             <h4>Witega 威特嘉科技開發股份有限公司</h4>
@@ -55,7 +61,7 @@ const Project = () => {
           <li className="work_card ">
             <a href="https://witega.com.tw/" target="_blank">
               <div className="work_list_img">
-                <img src="./IMG/witega.jpg" alt="" />
+                <img src={process.env.PUBLIC_URL + "/IMG/witega.jpg"} alt="" />
               </div>
             </a>
             <h4>Witega 威特嘉科技開發股份有限公司</h4>
